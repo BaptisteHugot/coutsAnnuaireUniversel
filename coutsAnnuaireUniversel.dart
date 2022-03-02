@@ -58,13 +58,13 @@ double coutsCollecte(int nombreAbonnesResidentiels, int nombreAbonnesProfessionn
 double coutsInvestissementElaboration(int nombreAbonnesResidentiels, int nombreAbonnesProfessionnels){ // Modifier par une variable unique dans le main
   int nombreAbonnes = nombreAbonnesResidentiels+nombreAbonnesProfessionnels;
 
-    if(nombreAbonnes < 10000) {
-      return 0.859 * nombreAbonnes + 2711;
-    }else if(nombreAbonnes < 200000) {
-      return 0.182 * nombreAbonnes + 9474;
-    }else if(nombreAbonnes < 2000000) {
-      return 0.025 * nombreAbonnes + 41036;
-    }else return 90156;
+  if(nombreAbonnes < 10000) {
+    return 0.859 * nombreAbonnes + 2711;
+  }else if(nombreAbonnes < 200000) {
+    return 0.182 * nombreAbonnes + 9474;
+  }else if(nombreAbonnes < 2000000) {
+    return 0.025 * nombreAbonnes + 41036;
+  }else return 90156;
 }
 
 /**
@@ -83,7 +83,7 @@ double coutsRecurrentsElaboration(int nombreAbonnesResidentiels, int nombreAbonn
   }else if(nombreAbonnes < 2000000) {
     return 0.013 * nombreAbonnes + 17747;
   }else
-      return 44059;
+    return 44059;
 }
 
 /**
@@ -105,13 +105,13 @@ double coutsElaboration(int nombreAbonnesResidentiels, int nombreAbonnesProfessi
 double coutsInvestissementDisposition(int nombreAbonnesResidentiels, int nombreAbonnesProfessionnels){ // Modifier par une variable unique dans le main
   int nombreAbonnes = nombreAbonnesResidentiels+nombreAbonnesProfessionnels;
 
-    if(nombreAbonnes < 10000) {
-      return 0.214 * nombreAbonnes + 715;
-    }else if(nombreAbonnes < 200000) {
-      return 0.015 * nombreAbonnes + 2708;
-    }else if(nombreAbonnes < 2000000) {
-      return 0.0016 * nombreAbonnes + 5400;
-    }else return 8576;
+  if(nombreAbonnes < 10000) {
+    return 0.214 * nombreAbonnes + 715;
+  }else if(nombreAbonnes < 200000) {
+    return 0.015 * nombreAbonnes + 2708;
+  }else if(nombreAbonnes < 2000000) {
+    return 0.0016 * nombreAbonnes + 5400;
+  }else return 8576;
 }
 
 /**
@@ -123,14 +123,14 @@ double coutsInvestissementDisposition(int nombreAbonnesResidentiels, int nombreA
 double coutsRecurrentsDisposition(int nombreAbonnesResidentiels, int nombreAbonnesProfessionnels){
   int nombreAbonnes = nombreAbonnesResidentiels+nombreAbonnesProfessionnels;
 
-    if(nombreAbonnes < 10000) {
-      return 0.148 * nombreAbonnes + 492;
-    }else if(nombreAbonnes < 200000) {
-      return 0.010 * nombreAbonnes + 1865;
-    }else if (nombreAbonnes < 2000000) {
-      return 0.0011 * nombreAbonnes + 3719;
-    }else
-      return 5906;
+  if(nombreAbonnes < 10000) {
+    return 0.148 * nombreAbonnes + 492;
+  }else if(nombreAbonnes < 200000) {
+    return 0.010 * nombreAbonnes + 1865;
+  }else if (nombreAbonnes < 2000000) {
+    return 0.0011 * nombreAbonnes + 3719;
+  }else
+    return 5906;
 }
 
 /**
